@@ -9,15 +9,13 @@ import {
 } from 'react-native';
 
 export default function App() {
-  // State to store current input
   const [task, setTask] = useState('');
 
   const [taskList, setTaskList] = useState([]);
 
-  // Function to add a new task
   const addTask = () => {
     if (task.trim() === '') {
-      return; // prevent empty tasks
+      return; 
     }
 
     const newTask = {
